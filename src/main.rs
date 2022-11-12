@@ -44,5 +44,7 @@ async fn main() {
             .write_all(line.as_bytes())
             .await
             .expect("Error echoing data.");
+
+        line.clear();
     }
 }
